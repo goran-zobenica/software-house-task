@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importing google fonts that are required by the project -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap');
+    </style>
+
+    <!-- importing jquery and popper that are required by Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- link to CDN Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Our CSS file goes after Bootstrap and before body allowing CSS to be rendered before DOM content is loaded -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Book concept</title>
+</head>
+
+<body>
+
+    <!-- wrapping everything with flex container that will have max 1600px with and min 350px -->
+    <div class="container-fluid">
+
+        <!-- SECTION 1  -->
+        <section class="row one">
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+                <header class="row">
+                    <div class="col">
+                        <img src="./images/booksLogo.png" alt="">
+
+                        <!-- adding responsive navigation bar component from Bootstrap -->
+                        <nav class="navbar navbar-expand-lg navbar-light">
+
+                            <!-- toggle button for collapsing or expanding the nav bar  -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+
+                                    <!-- navigation bar links -->
+                                    <a class="nav-item nav-link" href="#">Home</a>
+                                    <a class="nav-item nav-link" href="#">About Us</a>
+                                    <a class="nav-item nav-link" href="#">Contact</a>
+
+                                    <!-- navigation bar buttons -->
+                                    <button class="nav-button">LOGIN</button>
+                                    <button class="nav-button">SIGN UP</button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+                <main class="row">
+                    <div class="col-md-11 col-lg-7">
+                        <h1> Mauris enim tellus, finibus in enim tellus</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quaerat modi
+                            corrupti fugit enim quasi ipsa explicabo, laborum quibusdam hic!
+                        </p>
+                        <button class="nav-button"> FREE DEMO</button>
+                        <button class="nav-button"> SIGN UP</button>
+                    </div>
+                    <div class="col-md-1 col-lg-5">
+                    </div>
+                </main>
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </section>
+
+        <!-- SECTION 2  -->
+        <section class="row two">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+
+                <h1>OUR FEATURED SERVICES</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fuga tenetur fugiat provident
+                    libero deleniti odio illo consequuntur veniam facilis necessitatibus unde cupiditate voluptas ipsa
+                    facere voluptatum nesciunt? Neque ipsam totam non magnam natus repudiandae deleniti? Quae ipsam
+                    ducimus eos?</p>
+
+                <div class="row articles">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="serviceBox">
+                            <img src="./images/serviceIcon1.png" alt="">
+                            <h5>LOREM IPSUM</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi fugit asperiores a
+                                quidem praesentium tenetur autem eum rerum dicta?</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="serviceBox">
+                            <img src="./images/serviceIcon2.png" alt="">
+                            <h5>LOREM IPSUM</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi fugit asperiores a
+                                quidem praesentium tenetur autem eum rerum dicta?</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="serviceBox">
+                            <img src="./images/serviceIcon3.png" alt="">
+                            <h5>LOREM IPSUM</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi fugit asperiores a
+                                quidem praesentium tenetur autem eum rerum dicta?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+
+        </section>
+
+        <!-- SECTION 3  -->
+        <section class="row three">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <h1>Top Rated Books</h1>
+
+                <!-- this could be a list and we would use AJAX and REST API to fetch data -->
+                <div class="row">
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book1.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book2.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book3.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book4.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book2.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book3.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+
+        </section>
+
+        <!-- SECTION 4  -->
+        <section class="row four">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <div class="row">
+
+                    <div class="col-xs-0 col-md-3 col-lg-5"></div>
+
+                    <div class="col-xs-12 col-md-9 col-lg-7">
+                        <h1>Great benefits by reading regularly with Us</h1>
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <img src="./images/1.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="./images/2.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="./images/3.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="./images/4.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="./images/3.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="./images/4.png" alt="">
+                                <h5>LOREM IPSUM</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+        </section>
+
+        <!-- SECTION 5  -->
+        <section class="row five">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <h1>Most Popular Books</h1>
+
+                <!-- this could be a list and we would use AJAX and REST API to fetch data -->
+                <div class="row">
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book1.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book2.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book3.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book4.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book2.png" alt="">
+                    </div>
+
+                    <div class="col-sm6 col-md-4 col-xl-2">
+                        <img src="./images/book3.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2"></div>
+
+        </section>
+
+        <!-- SECTION 6  -->
+        <section class="row six">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <h1>Our Happy Customers</h1>
+
+                <!-- carousel component added from Bootstrap, this could be implemented with js and it would fetch real data from API endpoint and generate list of items-->
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+
+                    <!-- modified to display image and comment vs image only by default-->
+                    <div class="carousel-inner">
+
+                        <!-- displays item with the class "active", it cycles throug items every 3sec, this is active item by default -->
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="./images/customer.png" class="d-block w-100" alt="...">
+                            <div class="customerInfo">
+                                <h4>Nale Lastnaem</h4>
+                                <h6>booklover</h6>
+
+                                <p><img src="./images/openQuote.png" class="quote1" alt="">Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Quae, sapiente. Voluptas, quam eos et excepturi
+                                    quibusdam at vel repellat expedita.
+                                    <img src="./images/closedQuote.png" class="quote2" alt="">
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- another display item -->
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="https://i.pravatar.cc/300?img=16" class="d-block w-100" alt="...">
+                            <div class="customerInfo">
+                                <h4>Ann Jones</h4>
+                                <h6>booklover</h6>
+                                <p><img src="./images/openQuote.png" class="quote1" alt="">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Voluptatibus, voluptatum deleniti. Nostrum dolorem
+                                    nisi ipsum placeat? In molestias illum excepturi.
+                                    <img src="./images/closedQuote.png" class="quote2" alt="">
+                                </p>
+                            </div>
+                        </div>
+
+                          <!-- another display item -->
+                        <div class="carousel-item">
+                            <img src="https://i.pravatar.cc/300?img=44" class="d-block w-100" alt="...">
+                            <div class="customerInfo">
+                                <h4>Chirsteen Dowel</h4>
+                                <h6>booklover</h6>
+
+                                <p><img src="./images/openQuote.png" class="quote1" alt="">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing elit. Officiis, error accusamus! Voluptates maiores quidem
+                                    aliquam fuga totam pariatur repudiandae illum.
+                                    <img src="./images/closedQuote.png" class="quote2" alt=""></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- cycle controls, links to previous and next item -->
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span style='font-size:100px; color:black; margin-left:-20px;width:60%'>&#60</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span style='font-size:100px; color:black'>&#62</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+        </section>
+
+        <!-- SECTION 7  -->
+        <section class="row seven">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <div class="sign">
+                    <h2>PRICE</h2>
+                    <h1>55</h1>
+                    <h3>EUR/MO</h3>
+                    <button>SIGN UP</button>
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+
+        </section>
+
+        <!-- FOOTER  -->
+        <footer class="row footer">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+                <p>Lorem ipsum Copyright 2020.</p>
+            </div>
+
+            <div class="col-sm-2"></div>
+        </footer>
+    </div>
+</body>
+
+</html>

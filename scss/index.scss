@@ -1,0 +1,378 @@
+// GENERAL SETTINGS
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+    min-width: 350px;
+    max-width: 1600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+// SECTION 1 -------------------------------------------------------------------------
+
+section.one {
+    position: relative;
+    background-image: url('/images/background12.png');
+    background-position: left top;
+    background-size: cover;
+
+    header {
+        img {
+            float: left;
+            position: absolute;
+            margin-top: 20px;
+            width: 30px;
+        }
+    }
+
+    .navbar {
+        float: right;
+        background-color: transparent;
+
+        .nav-item {
+            width: 100px;
+            margin: 2% 0 0;
+
+            &:hover {
+                text-decoration-line: underline;
+                transform: scale(1.2);
+            }
+        }
+
+        a {
+            text-align: center;
+        }
+    }
+
+    .nav-button {
+        box-sizing: content-box;
+        padding: 5px;
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid #302e2f;
+        margin: 2% 1% 0;
+        color: #302e2f;
+        font-weight: bold;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+
+        &.nav-button:hover {
+            color: #edcb50;
+            background-color: #3b3b3b;
+        }
+    }
+
+    main {
+        min-height: 600px;
+        margin-top: 20%;
+
+        & h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+        }
+    }
+}
+
+// SECTION 2 -------------------------------------------------------------------------
+
+section.two {
+    padding: 5% 0;
+    background-color: #f7f7f7;
+    min-height: 500px;
+    text-align: center;
+
+    p {
+        margin: 5% 0;
+    }
+}
+
+.serviceBox {
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0px 0px 8px 0px rgb(146, 141, 141);
+    overflow: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    img {
+        margin: 20px 0;
+    }
+}
+
+// SECTION 3 and 5 --------------------------------------------------------------------
+
+section.three,
+section.five {
+    padding: 5% 0;
+    background-color: white;
+    min-height: 400px;
+    text-align: center;
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+    }
+
+    img {
+        width: 100%;
+        margin: 30px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// SECTION 4 -------------------------------------------------------------------------
+
+section.four {
+    position: relative;
+    background-image: url('/images/background3.png');
+    background-position: right top;
+    background-size: cover;
+    min-height: 700px;
+    text-align: center;
+
+    h1 {
+        margin: 70px 30px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    img {
+        margin: 10px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// SECTION 6 -------------------------------------------------------------------------
+
+section.six {
+    padding: 5% 0;
+    background-color: white;
+    min-height: 400px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 60px;
+    }
+
+    .carousel-inner {
+        margin: auto;
+        width: 80%;
+
+        .carousel-item.active {
+            transition: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    .w-100 {
+        display: inline-block !important;
+        width: 200px !important;
+        border-radius: 50%;
+        border: 3px double grey;
+    }
+
+    .customerInfo {
+        margin: 30px 0 0 35px;
+        display: inline-block !important;
+        width: 300px;
+        text-align: left;
+
+        h4 {
+            margin: 10px 5px 0px 0px;
+            font-weight: bold;
+        }
+
+        h6 {
+            margin-bottom: 10px;
+            color: rgb(109, 108, 108);
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .quote1 {
+            position: absolute;
+            margin-left: -30px;
+            margin-top: -5px;
+            width: 80px;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .quote2 {
+            margin-bottom: -5px;
+            position: absolute;
+            width: 80px;
+            bottom: 0;
+            right: 0;
+            z-index: -2;
+        }
+    }
+}
+
+// SECTION 7 -------------------------------------------------------------------------
+
+section.seven {
+    position: relative;
+    background-size: cover;
+    background-image: url('/images/background5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    text-align: center;
+
+    .sign {
+        position: absolute;
+        width: 476px;
+        top: 37%;
+        left: 35%;
+
+        h2 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 6em;
+            color: #edcb50;
+            margin-top: 30px;
+        }
+
+        button {
+            box-sizing: content-box;
+            padding: 5px;
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid #302e2f;
+            margin: 2% 1% 0;
+            color: #302e2f;
+            font-weight: bold;
+            width: 120px;
+            height: 30px;
+            border-radius: 15px;
+
+            &:hover {
+                color: #edcb50;
+                background-color: #3b3b3b;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.seven .sign {
+        top: 10%;
+        left: 0%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    section.seven .sign {
+        top: 10%;
+        left: 5%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    section.seven .sign {
+        top: 20%;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    section.seven .sign {
+        top: 20%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    section.seven .sign {
+        top: 35%;
+        left: 10%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    section.seven .sign {
+        top: 35%;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    section.seven .sign {
+        top: 35%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    section.seven .sign {
+        top: 35%;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    section.seven .sign {
+        top: 35%;
+        left: 30%;
+    }
+}
+
+
+@media screen and (min-width: 1250px) {
+    section.seven .sign {
+        top: 35%;
+        left: 32%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section.seven .sign {
+        top: 35%;
+        left: 34%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section.seven .sign {
+        top: 35%;
+        left: 35%;
+    }
+}
+
+// FOOTER -------------------------------------------------------------------------
+
+footer {
+    color: white;
+    background-color: black;
+}

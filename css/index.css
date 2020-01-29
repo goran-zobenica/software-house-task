@@ -1,0 +1,250 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif; }
+
+.container-fluid {
+  min-width: 350px;
+  max-width: 1600px;
+  margin: auto;
+  border: 1px solid black; }
+
+section.one {
+  position: relative;
+  background-image: url("/images/background12.png");
+  background-position: left top;
+  background-size: cover; }
+  section.one header img {
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    width: 30px; }
+  section.one .navbar {
+    float: right;
+    background-color: transparent; }
+    section.one .navbar .nav-item {
+      width: 100px;
+      margin: 2% 0 0; }
+      section.one .navbar .nav-item:hover {
+        text-decoration-line: underline;
+        transform: scale(1.2); }
+    section.one .navbar a {
+      text-align: center; }
+  section.one .nav-button {
+    box-sizing: content-box;
+    padding: 5px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #302e2f;
+    margin: 2% 1% 0;
+    color: #302e2f;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px; }
+    section.one .nav-button.nav-button:hover {
+      color: #edcb50;
+      background-color: #3b3b3b; }
+  section.one main {
+    min-height: 600px;
+    margin-top: 20%; }
+    section.one main h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4em; }
+
+section.two {
+  padding: 5% 0;
+  background-color: #f7f7f7;
+  min-height: 500px;
+  text-align: center; }
+  section.two p {
+    margin: 5% 0; }
+
+.serviceBox {
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0px 0px 8px 0px #928d8d;
+  overflow: auto; }
+  .serviceBox:hover {
+    cursor: pointer; }
+  .serviceBox img {
+    margin: 20px 0; }
+
+section.three,
+section.five {
+  padding: 5% 0;
+  background-color: white;
+  min-height: 400px;
+  text-align: center; }
+  section.three h1,
+  section.five h1 {
+    font-family: 'Dancing Script', cursive; }
+  section.three img,
+  section.five img {
+    width: 100%;
+    margin: 30px 0; }
+    section.three img:hover,
+    section.five img:hover {
+      cursor: pointer; }
+
+section.four {
+  position: relative;
+  background-image: url("/images/background3.png");
+  background-position: right top;
+  background-size: cover;
+  min-height: 700px;
+  text-align: center; }
+  section.four h1 {
+    margin: 70px 30px;
+    font-family: 'Dancing Script', cursive; }
+  section.four img {
+    margin: 10px 0; }
+    section.four img:hover {
+      cursor: pointer; }
+
+section.six {
+  padding: 5% 0;
+  background-color: white;
+  min-height: 400px;
+  text-align: center; }
+  section.six h1 {
+    margin-bottom: 60px; }
+  section.six .carousel-inner {
+    margin: auto;
+    width: 80%; }
+    section.six .carousel-inner .carousel-item.active {
+      transition: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+  section.six .w-100 {
+    display: inline-block !important;
+    width: 200px !important;
+    border-radius: 50%;
+    border: 3px double grey; }
+  section.six .customerInfo {
+    margin: 30px 0 0 35px;
+    display: inline-block !important;
+    width: 300px;
+    text-align: left; }
+    section.six .customerInfo h4 {
+      margin: 10px 5px 0px 0px;
+      font-weight: bold; }
+    section.six .customerInfo h6 {
+      margin-bottom: 10px;
+      color: #6d6c6c; }
+    section.six .customerInfo p {
+      position: relative;
+      z-index: 2; }
+    section.six .customerInfo .quote1 {
+      position: absolute;
+      margin-left: -30px;
+      margin-top: -5px;
+      width: 80px;
+      top: 0;
+      left: 0;
+      z-index: -2; }
+    section.six .customerInfo .quote2 {
+      margin-bottom: -5px;
+      position: absolute;
+      width: 80px;
+      bottom: 0;
+      right: 0;
+      z-index: -2; }
+
+section.seven {
+  position: relative;
+  background-size: cover;
+  background-image: url("/images/background5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  text-align: center; }
+  section.seven .sign {
+    position: absolute;
+    width: 476px;
+    top: 37%;
+    left: 35%; }
+    section.seven .sign h2 {
+      font-size: 4em;
+      font-weight: bold; }
+    section.seven .sign h1 {
+      font-weight: bolder;
+      font-size: 6em;
+      color: #edcb50;
+      margin-top: 30px; }
+    section.seven .sign button {
+      box-sizing: content-box;
+      padding: 5px;
+      background-color: transparent;
+      box-shadow: none;
+      border: 1px solid #302e2f;
+      margin: 2% 1% 0;
+      color: #302e2f;
+      font-weight: bold;
+      width: 120px;
+      height: 30px;
+      border-radius: 15px; }
+      section.seven .sign button:hover {
+        color: #edcb50;
+        background-color: #3b3b3b; }
+
+@media screen and (max-width: 400px) {
+  section.seven .sign {
+    top: 10%;
+    left: 0%; } }
+@media screen and (min-width: 400px) {
+  section.seven .sign {
+    top: 10%;
+    left: 5%; } }
+@media screen and (min-width: 450px) {
+  section.seven .sign {
+    top: 20%;
+    left: 15%; } }
+@media screen and (min-width: 500px) {
+  section.seven .sign {
+    top: 20%;
+    left: 20%; } }
+@media screen and (min-width: 575px) {
+  section.seven .sign {
+    top: 35%;
+    left: 10%; } }
+@media screen and (min-width: 700px) {
+  section.seven .sign {
+    top: 35%;
+    left: 15%; } }
+@media screen and (min-width: 800px) {
+  section.seven .sign {
+    top: 35%;
+    left: 20%; } }
+@media screen and (min-width: 950px) {
+  section.seven .sign {
+    top: 35%;
+    left: 25%; } }
+@media screen and (min-width: 1100px) {
+  section.seven .sign {
+    top: 35%;
+    left: 30%; } }
+@media screen and (min-width: 1250px) {
+  section.seven .sign {
+    top: 35%;
+    left: 32%; } }
+@media screen and (min-width: 1400px) {
+  section.seven .sign {
+    top: 35%;
+    left: 34%; } }
+@media screen and (min-width: 1500px) {
+  section.seven .sign {
+    top: 35%;
+    left: 35%; } }
+footer {
+  color: white;
+  background-color: black; }
+
+/*# sourceMappingURL=index.css.map */
